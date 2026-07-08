@@ -1,6 +1,6 @@
 # CICD-Pipeline
-## Jenkins CI CD pipeline for flask application
-### Task1: Setup
+# Jenkins CI CD pipeline for flask application
+## Task1: Setup
 ### Step1:
 We are going to use a cloud-based Jenkins service
 - https://jenkinsacademics.herovired.com/
@@ -8,17 +8,9 @@ We are going to use a cloud-based Jenkins service
 <img width="1915" height="962" alt="image" src="https://github.com/user-attachments/assets/647d6730-352f-4ee8-b256-42aa4d500834" />
 <img width="1890" height="962" alt="image" src="https://github.com/user-attachments/assets/b367143f-0104-44cb-8ea1-0b5ece471782" />
 
+
 ### Step2:
-
-#### Forked the repository
-  
-- (https://github.com/mohanDevOps-arch/flask_Practice.git)
-
-#### My forked repository
-- https://github.com/soumik5/flask_Practice.git
-
-### Step3:
-#### configure EC2 as a Jenkins node
+#### configure one EC2 as a Jenkins node
 - launching EC2
 <img width="1907" height="892" alt="image" src="https://github.com/user-attachments/assets/adf1d8fa-812c-430b-9681-fc804b7071f1" />
 <img width="1897" height="262" alt="image" src="https://github.com/user-attachments/assets/09a1c8b2-66b5-4e14-ac62-a8e1ded83f3a" />
@@ -68,11 +60,30 @@ git clone https://github.com/soumik5/flask_Practice.git
 - test application using pytest
 <img width="1907" height="251" alt="image" src="https://github.com/user-attachments/assets/234c1c8a-1df3-4684-87bc-445e3c099cd2" />
 
-## - Add the node (EC2 instance) to Jenkins server
+- Add the node (EC2 instance) to Jenkins server
 
 <img width="1772" height="960" alt="image" src="https://github.com/user-attachments/assets/dd56df6d-bf3a-497e-94b7-cd800a4cef31" />
- 
 
+## Task2: Source Code:
+
+#### Forked the repository
+  
+- (https://github.com/mohanDevOps-arch/flask_Practice.git)
+
+#### My forked repository where the flask source code is placed and Jenkins file will be pushed into this repository once created
+- https://github.com/soumik5/flask_Practice.git
+
+ 
+## Task3: Jenkins Pipeline:
+- Now create Jenkins pipeline locally with
+
+#### -Build: Install dependencies using pip.
+
+#### -Test: Run unit tests using a testing framework like pytest.
+
+#### -Deploy: If tests pass, deploy the application to a staging environment.
+
+- I will push the locally created Jenkinsfile to the main branch of my forked repository once I Configure the pipeline to trigger a new build whenever changes are pushed to the main branch of the repository.
 
 
 
