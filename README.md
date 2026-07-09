@@ -85,6 +85,73 @@ git clone https://github.com/soumik5/flask_Practice.git
 
 - I will push the locally created Jenkinsfile to the main branch of my forked repository once I Configure the pipeline to trigger a new build whenever changes are pushed to the main branch of the repository.
 
+## Task4: Triggers:
+
+#### create a new item and then select pipeline, give it a name, for me it is Flaskapp-Jenkins-Soumik5
+
+<img width="1506" height="842" alt="image" src="https://github.com/user-attachments/assets/c6d83fe8-bc5a-4fc4-b71d-e64852c065f3" />
+
+#### Now under the Trigger section select trigger option. I will use GitHub hook trigger for GITScm polling
+
+<img width="1692" height="771" alt="image" src="https://github.com/user-attachments/assets/c0dfe7be-f209-4fad-bdb9-9b1a232bb85c" />
+
+#### Under the pipeline section select below option and click save and apply.
+
+- Definition: Pipeline script from SCM
+- SCM: Git
+- Repository URL: https://github.com/soumik5/flask_Practice.git
+- Branch Specifier: */main
+- Script Path: Jenkinsfile
+
+<img width="1737" height="912" alt="image" src="https://github.com/user-attachments/assets/cbb457c4-4560-41eb-b9b4-31d471fe4125" />
+
+#### Now once you add the the jenkins file it will auto trigger the pipeline using webhook.
+
+<img width="1877" height="897" alt="image" src="https://github.com/user-attachments/assets/465aedbb-a1bd-45d3-8f8f-eff9fc735ca5" />
+
+#### My pipeline got executed automatically and successfully completed.
+
+<img width="1882" height="882" alt="image" src="https://github.com/user-attachments/assets/65afebbc-8514-4e43-b003-bcd92a724e57" />
+
+<img width="1897" height="922" alt="image" src="https://github.com/user-attachments/assets/a284cd22-fc6a-4da4-8f5e-9cbb9ac22b5c" />
+
+
+#### webhook log
+
+<img width="1892" height="427" alt="image" src="https://github.com/user-attachments/assets/86f332fd-8f69-4074-9ece-1de1deb4b10f" />
+
+## Task5: Notifications:
+
+#### Set up a notification system to alert via email when the build process fails or succeeds.
+
+#### create credential
+- Add credential
+- select type of credential: username with password
+- Username: give the email ID from where you want to send the notification.
+- Password: create new app password for jenkins if MFA is enabled for the mail ID.
+
+<img width="1785" height="171" alt="image" src="https://github.com/user-attachments/assets/a60fe195-6bb9-4087-98fe-a62e2b6d3d7b" />
+
+#### Configure notification using 
+
+- Go to manage jenkins and select System
+<img width="1931" height="907" alt="image" src="https://github.com/user-attachments/assets/04003cea-000e-43c6-95dd-14a4e0ea3fa9" />
+
+-
+
+
+
+#### You can see I got an email upon successful pipeline execution.
+
+<img width="1527" height="737" alt="image" src="https://github.com/user-attachments/assets/f6bac16d-070e-4fc2-89bb-3e408abfd9d2" />
+
+
+
+
+
+
+
+
 
 
 
