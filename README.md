@@ -75,7 +75,7 @@ git clone https://github.com/soumik5/flask_Practice.git
 
  
 ## Task3: Jenkins Pipeline:
-- Now create Jenkins pipeline locally with
+- Now create Jenkins pipeline locally. you can refer to the Jenkinsfile for detailed pipeline steps.
 
 #### -Build: Install dependencies using pip.
 
@@ -104,6 +104,13 @@ git clone https://github.com/soumik5/flask_Practice.git
 - Script Path: Jenkinsfile
 
 <img width="1737" height="912" alt="image" src="https://github.com/user-attachments/assets/cbb457c4-4560-41eb-b9b4-31d471fe4125" />
+
+#### Now create webhook inside your git repository in order trigger the build pipeline once somonce pushes anything to your repository
+
+<img width="1667" height="935" alt="image" src="https://github.com/user-attachments/assets/2e809183-d95b-481a-9c1e-0b6277441984" />
+
+<img width="1901" height="847" alt="image" src="https://github.com/user-attachments/assets/8a327771-d24e-4522-9b06-a3e54bdf5c6d" />
+
 
 #### Now once you add the the jenkins file it will auto trigger the pipeline using webhook.
 
@@ -137,11 +144,16 @@ git clone https://github.com/soumik5/flask_Practice.git
 - Go to manage jenkins and select System
 <img width="1931" height="907" alt="image" src="https://github.com/user-attachments/assets/04003cea-000e-43c6-95dd-14a4e0ea3fa9" />
 
--
+- Look for 'Extended E-mail Notification' section
+- SMTP server: smtp.gmail.com
+- SMTP Port: 587
+- Credentials: use your credential
+- Select the checkbox for Use TLS
+
+<img width="1842" height="907" alt="image" src="https://github.com/user-attachments/assets/9c19fc39-af3d-4be4-9af5-5fb3cc68f98c" />
 
 
-
-#### You can see I got an email upon successful pipeline execution.
+#### You can see I got an email upon successful pipeline execution after configuration.
 
 <img width="1527" height="737" alt="image" src="https://github.com/user-attachments/assets/f6bac16d-070e-4fc2-89bb-3e408abfd9d2" />
 
