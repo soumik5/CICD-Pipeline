@@ -158,21 +158,3 @@ git clone https://github.com/soumik5/flask_Practice.git
 <img width="1527" height="737" alt="image" src="https://github.com/user-attachments/assets/f6bac16d-070e-4fc2-89bb-3e408abfd9d2" />
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## GitHub Actions CI/CD Pipeline Flask App
