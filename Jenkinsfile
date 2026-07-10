@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-                git url: 'https://github.com/soumik5/flask_Practice.git',
+                git url: 'https://github.com/soumik5/CICD-Pipeline.git',
                 branch: 'main'   
                 }
             }
