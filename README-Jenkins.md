@@ -117,18 +117,18 @@ git clone https://github.com/soumik5/flask_Practice.git
 
 #### Now once you make any changes to the main branch of this repository it will auto trigger the pipeline using webhook.
 
-<img width="1877" height="897" alt="image" src="https://github.com/user-attachments/assets/465aedbb-a1bd-45d3-8f8f-eff9fc735ca5" />
-
 #### My pipeline got executed automatically and successfully completed.
 
-<img width="1882" height="882" alt="image" src="https://github.com/user-attachments/assets/65afebbc-8514-4e43-b003-bcd92a724e57" />
+<img width="1697" height="877" alt="image" src="https://github.com/user-attachments/assets/bf61377a-1a7f-4b06-bc76-cf64adb5ccfd" />
 
-<img width="1897" height="922" alt="image" src="https://github.com/user-attachments/assets/a284cd22-fc6a-4da4-8f5e-9cbb9ac22b5c" />
+<img width="1917" height="960" alt="image" src="https://github.com/user-attachments/assets/5ebb8a37-cccc-4dae-bebb-53e73904d255" />
+
 
 
 #### webhook log
 
-<img width="1892" height="427" alt="image" src="https://github.com/user-attachments/assets/86f332fd-8f69-4074-9ece-1de1deb4b10f" />
+<img width="1266" height="802" alt="image" src="https://github.com/user-attachments/assets/ab8271e9-4512-493c-855c-fd06f1bd2fd2" />
+
 
 ## Task5: Notifications:
 
@@ -158,6 +158,7 @@ git clone https://github.com/soumik5/flask_Practice.git
 
 #### You can see I got an email upon successful pipeline execution after configuration.
 
-<img width="1527" height="737" alt="image" src="https://github.com/user-attachments/assets/f6bac16d-070e-4fc2-89bb-3e408abfd9d2" />
+<img width="1536" height="767" alt="image" src="https://github.com/user-attachments/assets/955c74e4-8591-461d-b6cb-e26e078d5f9f" />
+
 
 
