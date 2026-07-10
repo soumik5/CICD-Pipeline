@@ -160,5 +160,10 @@ git clone https://github.com/soumik5/flask_Practice.git
 
 <img width="1536" height="767" alt="image" src="https://github.com/user-attachments/assets/955c74e4-8591-461d-b6cb-e26e078d5f9f" />
 
+#### you can see the service run successfully on my EC2 and I am able to acces the application via EC2 public IP with 5000 port
+<img width="1907" height="587" alt="image" src="https://github.com/user-attachments/assets/b1b410bf-ca61-4927-96a6-77fb64c55b7a" />
+#### I can also add soe entries and those data are getting stored to the DB successfully.
+<img width="1915" height="567" alt="image" src="https://github.com/user-attachments/assets/140ea2b1-9f34-4375-b79b-137759568990" />
+
 
 
