@@ -124,7 +124,7 @@ pipeline {
     Build URL:
     ${env.BUILD_URL}
     
-    Regards,
+    Warm Regards,
     Jenkins CI/CD
     """
             )
