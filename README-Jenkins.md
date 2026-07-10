@@ -70,8 +70,8 @@ git clone https://github.com/soumik5/flask_Practice.git
   
 - (https://github.com/mohanDevOps-arch/flask_Practice.git)
 
-#### My forked repository where the flask source code is placed and Jenkins file will be pushed into this repository once created
-- https://github.com/soumik5/flask_Practice.git
+#### My repository where the flask source code and Jenkins file are placed (flask source code is copied from above repository)
+- https://github.com/soumik5/CICD-Pipeline.git
 
  
 ## Task3: Jenkins Pipeline:
@@ -99,20 +99,23 @@ git clone https://github.com/soumik5/flask_Practice.git
 
 - Definition: Pipeline script from SCM
 - SCM: Git
-- Repository URL: https://github.com/soumik5/flask_Practice.git
+- Repository URL: [https://github.com/soumik5/flask_Practice.git](https://github.com/soumik5/CICD-Pipeline.git)
 - Branch Specifier: */main
 - Script Path: Jenkinsfile
 
-<img width="1737" height="912" alt="image" src="https://github.com/user-attachments/assets/cbb457c4-4560-41eb-b9b4-31d471fe4125" />
+<img width="1132" height="967" alt="image" src="https://github.com/user-attachments/assets/8dcb9733-1f2e-43ba-b3fb-2dc5e4c5cb7b" />
+
 
 #### Now create webhook inside your git repository in order trigger the build pipeline once somonce pushes anything to your repository
 
-<img width="1667" height="935" alt="image" src="https://github.com/user-attachments/assets/2e809183-d95b-481a-9c1e-0b6277441984" />
-
-<img width="1901" height="847" alt="image" src="https://github.com/user-attachments/assets/8a327771-d24e-4522-9b06-a3e54bdf5c6d" />
+<img width="1561" height="946" alt="image" src="https://github.com/user-attachments/assets/711ce6fa-1733-40bd-81db-6972a718d703" />
 
 
-#### Now once you add the the jenkins file it will auto trigger the pipeline using webhook.
+<img width="1642" height="907" alt="image" src="https://github.com/user-attachments/assets/f1f68ed2-83e7-436a-8437-1a9e3eb9c221" />
+
+
+
+#### Now once you make any changes to the main branch of this repository it will auto trigger the pipeline using webhook.
 
 <img width="1877" height="897" alt="image" src="https://github.com/user-attachments/assets/465aedbb-a1bd-45d3-8f8f-eff9fc735ca5" />
 
