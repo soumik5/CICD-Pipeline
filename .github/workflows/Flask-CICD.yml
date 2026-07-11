@@ -88,6 +88,10 @@ jobs:
           path: .venv
           include-hidden-files: true
 
+      - name: Set permissions for virtual environment
+        run: |  
+          chmod -R 777 .venv
+
       - name: Create .env file
         run: |
           echo "MONGO_URI=${{ secrets.MONGO_URI }}" >> .env
