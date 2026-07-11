@@ -28,6 +28,9 @@ jobs:
         run: |
           echo "MONGO_URI=${{ secrets.MONGO_URI }}" >> .env
           echo "SECRET_KEY=${{ secrets.SECRET_KEY }}" >> .env
+          ls -la
+          cd .venv
+          ls -la
 
       - name: Upload Python environment artifact
         uses: actions/upload-artifact@v4
