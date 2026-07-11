@@ -37,7 +37,7 @@ jobs:
 
       - name: unit tests
         run: |
-          pytest -v --collect-only
+          python -m pytest -v --collect-only
 
   Deploy-to-Staging:
     needs: Run-Tests
