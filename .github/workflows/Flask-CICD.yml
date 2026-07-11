@@ -37,6 +37,7 @@ jobs:
         with:
           name: python-env
           path: .venv
+          include-hidden-files: true
 
   run-tests:
     needs: install-dependencies
@@ -50,6 +51,7 @@ jobs:
         with:
           name: python-env
           path: .venv
+          include-hidden-files: true
 
       - name: Create .env file
         run: |
@@ -66,6 +68,7 @@ jobs:
         with:
           name: python-env-for-deploy
           path: .venv
+          include-hidden-files: true
 
   deploy-to-staging:
     needs: run-tests
@@ -79,6 +82,7 @@ jobs:
         with:
           name: python-env-for-deploy
           path: .venv
+          include-hidden-files: true
 
       - name: Create .env file
         run: |
