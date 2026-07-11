@@ -52,6 +52,8 @@ jobs:
           name: python-env
           path: .venv
           include-hidden-files: true
+          
+      - name: Set permissions for virtual environment
         run: |  
           chmod 777 .venv
 
