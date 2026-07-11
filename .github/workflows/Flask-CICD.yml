@@ -6,7 +6,7 @@ on:
       - staging
 
 jobs:
-  install-dependencies:
+  install-dependencies-test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -23,35 +23,26 @@ jobs:
           pip install -r requirements.txt
           ls -l
           
+      - name: create .env file
+        run: |
+          echo "MONGO_URI=${{ secrets.MONGO_URI }}" >> .env
+          echo "SECRET_KEY=${{ secrets.SECRET_KEY }}" >> .env
+
+      - name: unit tests
+        run: |
+          pytest -v --collect-only
+
+  Deploy-to-Staging:
+    needs: install-dependencies-test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
 
       - name: create .env file
         run: |
           echo "MONGO_URI=${{ secrets.MONGO_URI }}" >> .env
           echo "SECRET_KEY=${{ secrets.SECRET_KEY }}" >> .env
-          ls -l
-          pytest -v --collect-only
-        
-
-  run-tests:
-    needs: install-dependencies
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: unit tests
-        run: |
-          ls -l
-          python --version
-          pip --version
-          pytest -v --collect-only
-
-  Deploy-to-Staging:
-    needs: run-tests
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
 
       - name: Deploy to Staging Server
         run: |
